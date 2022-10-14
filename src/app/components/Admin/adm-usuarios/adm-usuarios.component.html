@@ -1,1 +1,41 @@
-<p>adm-usuarios works!</p>
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">
+      <h3 class="text-center text-primary">Usuarios Registrados</h3>
+    </div>
+    <div class="card-body text-center table-responsive">
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Doc. Identidad</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+            <th>Correo</th>
+            <th>Teléfono</th>            <th>Usuario</th>
+            <th>Contraseña</th>
+            <th colspan="2">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuario of usuariosRegistrados">
+            <td>{{usuario.cc}}</td>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.apellido}}</td>
+            <td>{{usuario.direccion}}</td>
+            <td>{{usuario.email}}</td>
+            <td>{{usuario.telefono}}</td>
+            <td>{{usuario.user}}</td>
+            <td>{{usuario.password}}</td>
+
+            <td><button class="btn btn-primary">Editar</button></td>
+            <td><button class="btn btn-danger">Eliminar</button></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

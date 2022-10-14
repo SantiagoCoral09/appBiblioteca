@@ -20,7 +20,7 @@ const routes: Routes = [
   {path:'adminUsuarios', component: AdmUsuariosComponent},
 
   {path:'listarPedidos', component: ListarPedidosComponent},
-  // {path:'adminPrestamos', component: AdmPrestamosComponent},
+  {path:'**',redirectTo:'',pathMatch:'full'} //ruta por defecto
 ];
 
 @NgModule({
