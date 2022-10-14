@@ -1,92 +1,111 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form [formGroup]="registrar" (ngSubmit)="registro()"class="form-horizontal" >
-                    <fieldset>
-                        <legend class="text-center header">Registro de Usuario</legend>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center header text-primary">Registro de Usuario</h3>
+        </div>
 
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="nombre"  formControlName="nombre" type="text" placeholder="Nombre de Usuario" class="form-control">
-                                <span *ngIf="registrar.get('nombre')?.invalid && registrar.get('nombre')?.touched" class="text-danger">
-                                    *El <strong>Nombre</strong> es un campo requerido
-                                </span>
-                            </div>
+        <div class="card-body text-center">
+            <form [formGroup]="registrar" (ngSubmit)="registro()" class="form-horizontal">
+                <fieldset>
+
+                    <div class="form-group text-center">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="nombre" formControlName="nombre" type="text" placeholder="Nombre de Usuario"
+                                class="form-control">
+                            <span *ngIf="registrar.get('nombre')?.invalid && registrar.get('nombre')?.touched"
+                                class="text-danger">
+                                *El <strong>Nombre</strong> es un campo requerido
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="apellido"  formControlName="apellido" type="text" placeholder="Apellido de Usuario" class="form-control">
-                                <span *ngIf="registrar.get('apellido')?.invalid && registrar.get('apellido')?.touched" class="text-danger">
-                                    *El <strong>Apellido</strong> es un campo requerido
-                                </span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="apellido" formControlName="apellido" type="text"
+                                placeholder="Apellido de Usuario" class="form-control">
+                            <span *ngIf="registrar.get('apellido')?.invalid && registrar.get('apellido')?.touched"
+                                class="text-danger">
+                                *El <strong>Apellido</strong> es un campo requerido
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="cc"  formControlName="cc" type="number" placeholder="Cedula de Usuario" class="form-control">
-                                <span *ngIf="registrar.get('cc')?.invalid && registrar.get('cc')?.touched" class="text-danger">
-                                    *La <strong>Cedula</strong> es un campo requerido
-                                </span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="cc" formControlName="cc" type="number" placeholder="Cedula de Usuario"
+                                class="form-control">
+                            <span *ngIf="registrar.get('cc')?.invalid && registrar.get('cc')?.touched"
+                                class="text-danger">
+                                *La <strong>Cedula</strong> es un campo requerido
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="direccion"  formControlName="direccion" type="text" placeholder="Direccion de Usuario" class="form-control">
-                                <span *ngIf="registrar.get('direccion')?.invalid && registrar.get('direccion')?.touched" class="text-danger">
-                                    *La <strong>Direccion</strong> es un campo requerido
-                                </span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="direccion" formControlName="direccion" type="text"
+                                placeholder="Direccion de Usuario" class="form-control">
+                            <span *ngIf="registrar.get('direccion')?.invalid && registrar.get('direccion')?.touched"
+                                class="text-danger">
+                                *La <strong>Direccion</strong> es un campo requerido
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="telefono"  formControlName="telefono" type="number" placeholder="Telefono de Usuario" class="form-control">
-                                <span *ngIf="registrar.get('telefono')?.invalid && registrar.get('telefono')?.touched" class="text-danger">
-                                    *El <strong>Telefono</strong> es un campo requerido
-                                </span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="telefono" formControlName="telefono" type="number"
+                                placeholder="Telefono de Usuario" class="form-control">
+                            <span *ngIf="registrar.get('telefono')?.invalid && registrar.get('telefono')?.touched"
+                                class="text-danger">
+                                *El <strong>Telefono</strong> es un campo requerido
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="email"  formControlName="email" type="email" placeholder="Email de Usuario" class="form-control">
-                                <span *ngIf="registrar.get('email')?.invalid && registrar.get('email')?.touched" class="text-danger">
-                                    *El <strong>Email</strong> es un campo requerido
-                                </span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="email" formControlName="email" type="email" placeholder="Email de Usuario"
+                                class="form-control">
+                            <span *ngIf="registrar.get('email')?.invalid && registrar.get('email')?.touched"
+                                class="text-danger">
+                                *El <strong>Email</strong> es un campo requerido
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="user"  formControlName="user" type="text" placeholder="Usuario" class="form-control">
-                                <span *ngIf="registrar.get('user')?.invalid && registrar.get('user')?.touched" class="text-danger">
-                                    *El <strong>Usuario</strong> es un campo requerido
-                                </span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="user" formControlName="user" type="text" placeholder="Usuario"
+                                class="form-control">
+                            <span *ngIf="registrar.get('user')?.invalid && registrar.get('user')?.touched"
+                                class="text-danger">
+                                *El <strong>Usuario</strong> es un campo requerido
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="password"  formControlName="password" type="password" placeholder="Contraseña de Usuario" class="form-control">
-                                <span *ngIf="registrar.get('direccion')?.invalid && registrar.get('password')?.touched" class="text-danger">
-                                    *La <strong>Contraseña</strong> es un campo requerido
-                                </span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <input id="password" formControlName="password" type="password"
+                                placeholder="Contraseña de Usuario" class="form-control">
+                            <span *ngIf="registrar.get('direccion')?.invalid && registrar.get('password')?.touched"
+                                class="text-danger">
+                                *La <strong>Contraseña</strong> es un campo requerido
+                            </span>
                         </div>
-                       
-                        <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg" [disabled]="registrar.invalid">Submit</button>
-                            </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary btn-lg"
+                                [disabled]="registrar.invalid">Submit</button>
                         </div>
-                    </fieldset>
-                </form>
-            </div>
+                    </div>
+                </fieldset>
+            </form>
+
         </div>
     </div>
 </div>

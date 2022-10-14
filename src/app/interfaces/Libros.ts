@@ -1,8 +1,9 @@
-export interface Libro{
-    id?:number;////acceder desde cualquier parte del programa
+
+export interface Libro{////acceder desde cualquier parte del programa
+    id?:number;
     isbn:number;////? es opcional
     titulo:string;
     autor:string;
     editorial:string;
-    fechaPublicacion:Date;
+    fechaPublicacion:string;
 }

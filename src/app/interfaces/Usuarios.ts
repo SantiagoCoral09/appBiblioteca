@@ -1,5 +1,6 @@
-export interface Usuarios{
-    id?:number;///acceder desde cualquier parte del programa
+
+export interface Usuarios{////acceder desde cualquier parte del programa
+    id?:number;
     cc:number;
     nombre:string;
     apellido:string;

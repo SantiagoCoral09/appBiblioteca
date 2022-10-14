@@ -1,3 +1,35 @@
 
 <app-navbar></app-navbar>
-<p>libros works!</p>
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">
+      <h3 class="text-center text-primary">Libros Registrados</h3>
+    </div>
+    <div class="card-body text-center table-responsive">
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Isbn</th>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+            <th>Fecha de Publicación</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let libro of librosRegistrados">
+            <td>{{libro.isbn}}</td>
+            <td>{{libro.autor}}</td>
+            <td>{{libro.titulo}}</td>
+            <td>{{libro.editorial}}</td>
+            <td>{{libro.fechaPublicacion}}</td>
+            <td><button class="btn btn-primary">Pedir</button></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
