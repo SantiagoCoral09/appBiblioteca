@@ -1,3 +1,4 @@
+
 export interface Usuarios{////acceder desde cualquier parte del programa
     id?:number;
     cc:number;
