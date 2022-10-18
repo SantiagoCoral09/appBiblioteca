@@ -13,6 +13,7 @@ import { AdmUsuariosComponent } from './components/Admin/adm-usuarios/adm-usuari
 import { ListarPedidosComponent } from './components/Clientes/listar-pedidos/listar-pedidos.component';
 import { ModificarComponent } from './components/AllUsers/modificar/modificar.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavbarClienteComponent } from './components/Clientes/navbar-cliente/navbar-cliente.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AdmPrestamosComponent,
     AdmUsuariosComponent,
     ListarPedidosComponent,
-    ModificarComponent
+    ModificarComponent,
+    NavbarClienteComponent
   ],
   imports: [
     BrowserModule,
