@@ -25,7 +25,7 @@ export class LibrosComponent implements OnInit {
     },
     {
       isbn:9789587231588,
-      titulo:'Metro 2033',
+      titulo:'La riqueza de las naciones',
       autor:'Adam Smith',
       editorial:'Valencia Quintero Jorge Javier',
       fechaPublicacion:'09-02-2022'

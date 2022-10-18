@@ -14,6 +14,7 @@ import { ListarPedidosComponent } from './components/Clientes/listar-pedidos/lis
 import { ModificarComponent } from './components/AllUsers/modificar/modificar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarClienteComponent } from './components/Clientes/navbar-cliente/navbar-cliente.component';
+import { VerLibroComponent } from './components/Clientes/ver-libro/ver-libro.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NavbarClienteComponent } from './components/Clientes/navbar-cliente/nav
     AdmUsuariosComponent,
     ListarPedidosComponent,
     ModificarComponent,
-    NavbarClienteComponent
+    NavbarClienteComponent,
+    VerLibroComponent
   ],
   imports: [
     BrowserModule,

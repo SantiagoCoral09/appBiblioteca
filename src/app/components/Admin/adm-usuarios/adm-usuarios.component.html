@@ -6,7 +6,7 @@
     </div>
     <div class="card-body text-center table-responsive">
 
-      <table class="table table-striped">
+      <table *ngIf="usuariosRegistrados.length > 0" class="table table-striped">
         <thead>
           <tr>
             <th>Doc. Identidad</th>
@@ -36,6 +36,9 @@
           </tr>
         </tbody>
       </table>
+      <div *ngIf="usuariosRegistrados.length == 0" class="row mt5">
+        <h5>No hay Libros Registrados</h5>
+      </div>
     </div>
   </div>
 </div>
